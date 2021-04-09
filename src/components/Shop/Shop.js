@@ -32,7 +32,7 @@ const Shop = () => {
         .then((data) => setCart(data));
     }, [])
 
-    const handleAddProduct = (product) =>{r
+    const handleAddProduct = (product) =>{
         const toBeAddedKey = product.key;
         const sameProduct = cart.find(pd => pd.key === toBeAddedKey);
         let count = 1;
